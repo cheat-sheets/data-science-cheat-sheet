@@ -1,5 +1,80 @@
 # Data Science Cheet Sheet
 
+## Deep Learning Specialization
+
+### Structuring ML Projects
+
+Orthogonalization.
+
+Optimizing, satisfizing.
+
+Train and dev sets should come from same distribution.
+
+Bayes error - the best achievable error for a human or algorithm for a given problem.
+
+If your algorithm is performing worse than a human, then to improve your algorithm you can:
+- Get labeled data from humans.
+- Gain insight from manual error analysis: why did a person get this right?
+- Better analysis of bias/variance.
+
+![avoidable-bias.png](./assets/avoidable-bias.png)   
+
+Problems where ML significantly surpasses human-level performance:
+- Online advertising
+- Product recommendations
+- Logistics (predicting transit time)
+- Loan approvals
+
+All of the above are ML on structured data as opposed to natural perception.
+
+![ml-strategy.png](./assets/ml-strategy.png)
+
+Advise from Andrej Karpathy for learning ML: try implementing a NN from scratch, without relying on any libraries
+like TensorFlow.
+
+---
+
+Error Analysis: focus on what contributes most to model error.
+
+Incorrectly labeled data: fix it if it contributes a significant portion to error; fix it across train, dev, test
+datasets universally.
+
+It's important to make your dev and test datasets be as close to real-world data, even if it results in 
+train and dev/test datasets be drawn from different distributions. This way yo optimise to the right target. 
+In this case to perform bias/variance analysis introduce train/dev dataset, to measure the variance contribution 
+to error.
+
+![data-mismatch.png](./assets/data-mismatch.png)
+
+## Random Notes
+
+- Train, dev, and tet datasets:
+    - Dev dataset prevents overfitting NN parameters (weights and biases) to the train data
+    - Test dataset prevents overfitting NN hyper-parameters (model architecture, number of layers types of layers) 
+        to the train and dev data.
+    
+- What stage are we at? Stages of an ML project:
+    - 1. Individual contributor
+    - 2. Delegation
+    - 3. Digitization
+    - 4. Big Data and Analytics
+    - 5. Machine Learning 
+
+- CRISP-DM model
+    - 1. Business understanding
+    - 2. Data understanding
+    - 3. Data preparation
+    - 4. Modeling
+    - 5. Evaluation
+    - 6. Deployment  
+    
+- Precision, recall, accuracy, sensitivity, specificity
+    - Precision and recall https://en.wikipedia.org/wiki/Precision_and_recall
+    - Accuracy = Sensitivity * prevalence + Specificity * (1 - prevalence)
+    - F1-score = 2 / ((1/P) + (1/R)) - harmonic mean, average speed.
+    
+![precisionrecall.png](./assets/precisionrecall.png)    
+
 ## Google Colab Notebooks
 
 - [10 Minutes to Pandas](https://colab.research.google.com/drive/1LuUxoGo1yELpJ9JKnQF2Mujdm_9RYVqR)
@@ -17,4 +92,5 @@
 - Machine Learning with TensorFlow on GCP Specialization https://www.coursera.org/specializations/machine-learning-tensorflow-gcp
 - Advanced Machine Learning with TensorFlow on GCP Specialization https://www.coursera.org/specializations/advanced-machine-learning-tensorflow-gcp
 - TensorFlow and Keras in Practice Specialization https://www.coursera.org/specializations/tensorflow-in-practice
+- Neural Networks and Deep Learning, book by Michael, Nielsen http://neuralnetworksanddeeplearning.com/
 
