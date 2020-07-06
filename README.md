@@ -1,6 +1,6 @@
 # Data Science Cheet Sheet
 
-## Deep Learning Specialization
+## Deep Learning
 
 ### Structuring ML Projects
 
@@ -48,7 +48,7 @@ to error.
 
 ## Random Notes
 
-- Train, dev, and tet datasets:
+- Train, dev, and test datasets:
     - Dev dataset prevents overfitting NN parameters (weights and biases) to the train data
     - Test dataset prevents overfitting NN hyper-parameters (model architecture, number of layers types of layers) 
         to the train and dev data.
