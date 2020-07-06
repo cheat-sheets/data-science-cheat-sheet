@@ -20,18 +20,18 @@ If your algorithm is performing worse than a human, then to improve your algorit
 **When to focus on bias and when on variance**:
 - If human error is **1%**, train error is **8%**, dev error is **10%**, then focus on **avoidable bias**, i.e reducing the train error,
     because it can potentially be reduced by 7 pp, compared to just 2 pp for dev error. To reduce the train error you can try the following:
-        - Train a bigger model
-        - Train longer
-        - Try better optimization algorithms: RMSProp, Adam
-        - Try a different NN architecture: RNN, CNN
-        - Hyperparameter search 
+    - Train a bigger model
+    - Train longer
+    - Try better optimization algorithms: RMSProp, Adam
+    - Try a different NN architecture: RNN, CNN
+    - Hyperparameter search 
 - If human error is **7%**, train error is **8%**, dev error is **10%**, then focus on **variance**, i.e reducing the dev error,
     because it can potentially be reduced by 2 pp, compared to just 1 pp for train error. To reduce the dev error you can try the following:
-        - Add more data
-        - Regularization: L1, L2, dropout, 
-        - Data augmentation
-        - Try a different NN architecture: RNN, CNN
-        - Hyperparameter search 
+    - Add more data
+    - Regularization: L1, L2, dropout, 
+    - Data augmentation
+    - Try a different NN architecture: RNN, CNN
+    - Hyperparameter search 
 
 Problems where ML significantly surpasses human-level performance:
 - Online advertising
@@ -51,7 +51,7 @@ blurry images and 10% are due to misclassified as a dog instead of a cat, then f
 - fix it if it contributes a significant portion to error; 
 - fix it across train, dev, test datasets universally. Otherwise it may introduce bias to the dataset.
 
-It's important to make your dev and test datasets be as close to real-world data, even if it results in 
+It's important to make your dev and test datasets as close to real-world data, even if it results in 
 train and dev/test datasets be drawn from different distributions. This way you optimise to the right target. 
 In this case to perform bias/variance analysis introduce train-dev dataset, to measure the variance contribution 
 to error.
