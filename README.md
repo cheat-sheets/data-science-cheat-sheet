@@ -1,6 +1,20 @@
 # Data Science Cheet Sheet
 
-## Deep Learning
+Data science is a concept to unify statistics, data analysis, machine learning, domain knowledge 
+and their related methods in order to understand and analyze actual phenomena with data.
+
+## Table of Contents
+
+- [Statistics](#statistics)
+- [Machine Learning](#machine-learning)
+- [Data Science Tools](#data-science-tools)
+- [Resources](#resources)
+
+## Statistics
+
+TODO
+
+## Machine Learning
 
 ### Structuring ML Projects
 
@@ -103,9 +117,11 @@ then phonemes, the words, and then generating a transcript.
     - Accuracy = Sensitivity * prevalence + Specificity * (1 - prevalence)
     - F1-score = 2 / ((1/P) + (1/R)) - harmonic mean, average speed.
     
-![precisionrecall.png](./assets/precisionrecall.png)    
+<img src="assets/precisionrecall.png" width="400" alt="Precision and Recall"/>
 
-## Google Colab Notebooks
+## Data Science Tools
+
+### Google Colab
 
 - [10 Minutes to Pandas](https://colab.research.google.com/drive/1LuUxoGo1yELpJ9JKnQF2Mujdm_9RYVqR)
 - [Keras Hello World](https://colab.research.google.com/drive/14D_1LHcgFdTjmHzDtJV3M6h4flSR-pyK)
@@ -118,9 +134,10 @@ then phonemes, the words, and then generating a transcript.
 
 ## Resources
 
-- Deep Learning Specialization https://www.coursera.org/specializations/deep-learning
-- Machine Learning with TensorFlow on GCP Specialization https://www.coursera.org/specializations/machine-learning-tensorflow-gcp
-- Advanced Machine Learning with TensorFlow on GCP Specialization https://www.coursera.org/specializations/advanced-machine-learning-tensorflow-gcp
-- TensorFlow and Keras in Practice Specialization https://www.coursera.org/specializations/tensorflow-in-practice
-- Neural Networks and Deep Learning, book by Michael, Nielsen http://neuralnetworksanddeeplearning.com/
+- [Neural Networks and Deep Learning, book by Michael Nielsen](http://neuralnetworksanddeeplearning.com/) 
+- [Deep Learning Specialization, Coursera](https://www.coursera.org/specializations/deep-learning) 
+- [Machine Learning with TensorFlow on GCP Specialization, Coursera](https://www.coursera.org/specializations/machine-learning-tensorflow-gcp)
+- [Advanced Machine Learning with TensorFlow on GCP Specialization, Coursera](https://www.coursera.org/specializations/advanced-machine-learning-tensorflow-gcp)
+- [TensorFlow and Keras in Practice Specialization, Coursera](https://www.coursera.org/specializations/tensorflow-in-practice) 
+
 
