@@ -90,6 +90,14 @@ then phonemes, the words, and then generating a transcript.
 - Pros: let the data speak, less hand-designing of components needed.
 - Cons: may need large amount of data, excludes potentially useful hand-designed components.
 
+### Heroes of ML
+
+- [Geoffrey Hinton](https://twitter.com/geoffreyhinton) - Works for Google Brain, professor at the University of Toronto.
+- [Pieter Abbeel](https://twitter.com/pabbeel) - Director of the Berkeley Robot Learning Lab.
+- [Ian Goodfellow](https://twitter.com/goodfellow_ian) - Director of machine learning in the Special Projects Group at Apple.
+- [Yuanqing Lin](https://twitter.com/yuanqinglin) - CEO & Founder of Aibee, Former Head of Baidu Research.
+- [Yann LeCun](https://twitter.com/ylecun) - Professor at NYU. Chief AI Scientist at Facebook.
+
 ## Random Notes
 
 - Train, dev, and test datasets:
@@ -117,7 +125,7 @@ then phonemes, the words, and then generating a transcript.
     - Accuracy = Sensitivity * prevalence + Specificity * (1 - prevalence)
     - F1-score = 2 / ((1/P) + (1/R)) - harmonic mean, average speed.
     
-<img src="assets/precisionrecall.png" width="400" alt="Precision and Recall"/>
+<img src="assets/precisionrecall.png" width="300" alt="Precision and Recall"/>
 
 ## Data Science Tools
 
