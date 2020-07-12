@@ -92,9 +92,11 @@ then phonemes, the words, and then generating a transcript.
 
 ### Heroes of ML
 
-- [Geoffrey Hinton](https://twitter.com/geoffreyhinton) - Works for Google Brain, professor at the University of Toronto.
+- [Andrej Karpathy](https://twitter.com/karpathy) - Director of AI at Tesla.
+- [Geoffrey Hinton](https://twitter.com/geoffreyhinton) - Works for Google Brain, Professor at the University of Toronto.
 - [Pieter Abbeel](https://twitter.com/pabbeel) - Director of the Berkeley Robot Learning Lab.
 - [Ian Goodfellow](https://twitter.com/goodfellow_ian) - Director of machine learning in the Special Projects Group at Apple.
+- [Ruslan Salakhutdinov](https://twitter.com/rsalakhu) - UPMC Professor of Computer Science at Carnegie Mellon University.
 - [Yuanqing Lin](https://twitter.com/yuanqinglin) - CEO & Founder of Aibee, Former Head of Baidu Research.
 - [Yann LeCun](https://twitter.com/ylecun) - Professor at NYU. Chief AI Scientist at Facebook.
 
