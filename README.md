@@ -16,6 +16,10 @@ TODO
 
 ## Machine Learning
 
+### Neural Networks
+
+TODO
+
 ### Structuring ML Projects
 
 It is better to find a single optimization metric, this way it will be easier to choose a better model.
@@ -92,6 +96,7 @@ then phonemes, the words, and then generating a transcript.
 
 ### Heroes of ML
 
+- [Andrew Ng](https://twitter.com/AndrewYNg) - Co-Founder of Coursera; Stanford CS adjunct faculty. Former head of Baidu AI Group/Google Brain.
 - [Andrej Karpathy](https://twitter.com/karpathy) - Director of AI at Tesla.
 - [Geoffrey Hinton](https://twitter.com/geoffreyhinton) - Works for Google Brain, Professor at the University of Toronto.
 - [Pieter Abbeel](https://twitter.com/pabbeel) - Director of the Berkeley Robot Learning Lab.
@@ -108,26 +113,32 @@ then phonemes, the words, and then generating a transcript.
         to the train and dev data.
     
 - What stage are we at? Stages of an ML project:
-    - 1. Individual contributor
-    - 2. Delegation
-    - 3. Digitization
-    - 4. Big Data and Analytics
-    - 5. Machine Learning 
+    1. Individual contributor
+    2. Delegation
+    3. Digitization
+    4. Big Data and Analytics
+    5. Machine Learning 
 
 - CRISP-DM model
-    - 1. Business understanding
-    - 2. Data understanding
-    - 3. Data preparation
-    - 4. Modeling
-    - 5. Evaluation
-    - 6. Deployment  
+    1. Business understanding
+    2. Data understanding
+    3. Data preparation
+    4. Modeling
+    5. Evaluation
+    6. Deployment  
     
 - Precision, recall, accuracy, sensitivity, specificity
     - Precision and recall https://en.wikipedia.org/wiki/Precision_and_recall
     - Accuracy = Sensitivity * prevalence + Specificity * (1 - prevalence)
     - F1-score = 2 / ((1/P) + (1/R)) - harmonic mean, average speed.
     
-<img src="assets/precisionrecall.png" width="300" alt="Precision and Recall"/>
+<img src="assets/precisionrecall.png" width="300" alt="precisionrecall.png"/>
+
+**Log loss (cross entropy loss)**:
+
+<img src="assets/log-loss-cross-entropy.png" width="300" alt="log-loss-cross-entropy.png"/> <img src="assets/log-loss-cross-entropy-graph.png" width="300" alt="log-loss-cross-entropy-graph.png"/>
+
+- Most of the economic value is created by supervised learning.   
 
 ## Data Science Tools
 
@@ -144,10 +155,10 @@ then phonemes, the words, and then generating a transcript.
 
 ## Resources
 
-- [Neural Networks and Deep Learning, book by Michael Nielsen](http://neuralnetworksanddeeplearning.com/) 
 - [Deep Learning Specialization, Coursera](https://www.coursera.org/specializations/deep-learning) 
 - [Machine Learning with TensorFlow on GCP Specialization, Coursera](https://www.coursera.org/specializations/machine-learning-tensorflow-gcp)
 - [Advanced Machine Learning with TensorFlow on GCP Specialization, Coursera](https://www.coursera.org/specializations/advanced-machine-learning-tensorflow-gcp)
-- [TensorFlow and Keras in Practice Specialization, Coursera](https://www.coursera.org/specializations/tensorflow-in-practice) 
+- [TensorFlow and Keras in Practice Specialization, Coursera](https://www.coursera.org/specializations/tensorflow-in-practice)
+- [Neural Networks and Deep Learning, book by Michael Nielsen](http://neuralnetworksanddeeplearning.com/)  
 
 
