@@ -154,7 +154,7 @@ then phonemes, the words, and then generating a transcript.
     for very large or small values of input.
 - Weights of the layers of a neural net should be initialized with random small numbers. If they are initialized
     with zeroes then all neurons of a layer will train to the same weights. If they are initialized as big numbers
-    and sigmoid or tanh activation is used, they will become saturated quickly and the learning will be small. 
+    and sigmoid or tanh activation is used, they will become saturated quickly and the learning will stall. 
 - Why deep neural nets work better than shallow for complex functions: to calculate XOR of N parameters a deep
     neural net needs `log(N)` units, while a shallow neural net needs `2^n` units. A shallow net would be much bigger.      
 
