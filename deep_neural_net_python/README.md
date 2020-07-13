@@ -1,13 +1,19 @@
-Implementation of a deep neural network in Python 3.6 with `numpy`. 
-The corresponding Google Colab notebook: https://colab.research.google.com/drive/1cXdV6xQboB5zk1MEQRK-zV3UHw7f3wjr#scrollTo=r5119L1ge9NL
+## Deep Neural Network in Python
 
-Install dependencies:
+Implementation of a deep neural network in Python only using numpy. 
+The corresponding Google Colab notebook: [Deep Neural Network - Application](https://colab.research.google.com/drive/1cXdV6xQboB5zk1MEQRK-zV3UHw7f3wjr#scrollTo=r5119L1ge9NL)
+
+**Prerequisites**:
+
+- Python 3.6+
+
+**Install dependencies**:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run it:
+**Run it**:
 
 ```bash
 python network.py
