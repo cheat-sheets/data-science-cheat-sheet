@@ -18,7 +18,10 @@ TODO
 
 ### Neural Networks
 
-TODO
+- [Implementation of a Deep Neural Network in Python](./deep_neural_net_python)
+- [Deep Learning Specialization, GitHub](https://github.com/medvedev1088/deep-learning-coursera)
+- [Building your Deep Neural Network - Step by Step, Google Colab](https://colab.research.google.com/drive/1_HQrowDxJRc38Gej3wPCttYBJmMiznrl#scrollTo=8jt2uP6xSvJG&uniqifier=1)
+- [Deep Neural Network - Application, Google Colab](https://colab.research.google.com/drive/1cXdV6xQboB5zk1MEQRK-zV3UHw7f3wjr#scrollTo=D7mFwkB0dWKL)
 
 ### Structuring ML Projects
 
@@ -136,9 +139,16 @@ then phonemes, the words, and then generating a transcript.
 
 **Log loss (cross entropy loss)**:
 
-<img src="assets/log-loss-cross-entropy.png" width="300" alt="log-loss-cross-entropy.png"/> <img src="assets/log-loss-cross-entropy-graph.png" width="300" alt="log-loss-cross-entropy-graph.png"/>
+<img src="assets/log-loss-cross-entropy.png" width="350" alt="log-loss-cross-entropy.png"/> <img src="assets/log-loss-cross-entropy-graph.png" width="350" alt="log-loss-cross-entropy-graph.png"/>
 
 - Most of the economic value is created by supervised learning.   
+- tanh activation works better than sigmoid activation because it makes input data centered.
+    Sigmoid should only be used in the last layer for classification because it's between 0 and 1 (probability).
+- ReLU works better than sigmoid or tanh because, unlike sigmoid and tanh it's derivative is not approaching 0
+    for very large or small values of input.
+- Weights of the layers of a neural net should be initialized with random small numbers. If they are initialized
+    with zeroes then all neurons of a layer will train to the same weights. If they are initialized as big numbers
+    and sigmoid or tanh activation is used, they will become saturated quickly and the learning will be small.   
 
 ## Data Science Tools
 
@@ -156,6 +166,7 @@ then phonemes, the words, and then generating a transcript.
 ## Resources
 
 - [Deep Learning Specialization, Coursera](https://www.coursera.org/specializations/deep-learning) 
+- [Deep Learning Specialization, Python Notebooks on GitHub](https://github.com/medvedev1088/deep-learning-coursera)
 - [Machine Learning with TensorFlow on GCP Specialization, Coursera](https://www.coursera.org/specializations/machine-learning-tensorflow-gcp)
 - [Advanced Machine Learning with TensorFlow on GCP Specialization, Coursera](https://www.coursera.org/specializations/advanced-machine-learning-tensorflow-gcp)
 - [TensorFlow and Keras in Practice Specialization, Coursera](https://www.coursera.org/specializations/tensorflow-in-practice)
