@@ -18,10 +18,16 @@ TODO
 
 ### Neural Networks
 
-- [Implementation of a Deep Neural Network in Python](./deep_neural_net_python)
 - [Deep Learning Specialization, GitHub](https://github.com/medvedev1088/deep-learning-coursera)
 - [Building your Deep Neural Network - Step by Step, Google Colab](https://colab.research.google.com/drive/1_HQrowDxJRc38Gej3wPCttYBJmMiznrl#scrollTo=8jt2uP6xSvJG&uniqifier=1)
 - [Deep Neural Network - Application, Google Colab](https://colab.research.google.com/drive/1cXdV6xQboB5zk1MEQRK-zV3UHw7f3wjr#scrollTo=D7mFwkB0dWKL)
+
+DNN implementations:
+
+- Python: TODO
+- Python + numpy: [Implementation of a Deep Neural Network in Python](./deep_neural_net_python)
+- TensorFlow: TODO
+- Keras: TODO
 
 ### Structuring ML Projects
 
@@ -148,7 +154,9 @@ then phonemes, the words, and then generating a transcript.
     for very large or small values of input.
 - Weights of the layers of a neural net should be initialized with random small numbers. If they are initialized
     with zeroes then all neurons of a layer will train to the same weights. If they are initialized as big numbers
-    and sigmoid or tanh activation is used, they will become saturated quickly and the learning will be small.   
+    and sigmoid or tanh activation is used, they will become saturated quickly and the learning will be small. 
+- Why deep neural nets work better than shallow for complex functions: to calculate XOR of N parameters a deep
+    neural net needs `log(N)` units, while a shallow neural net needs `2^n` units. A shallow net would be much bigger.      
 
 ## Data Science Tools
 
