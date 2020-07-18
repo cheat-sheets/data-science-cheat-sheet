@@ -7,12 +7,41 @@ and their related methods in order to understand and analyze actual phenomena wi
 
 - [Statistics](#statistics)
 - [Machine Learning](#machine-learning)
+    - [Heroes of ML](#heroes-of-ml)
+- [AI for Industries](#ai-for-industries)
+    - [AI for Healhcare](#ai-for-healthcare)
+    - [AI for Financial Services](ai-for-financial-services)
 - [Data Science Tools](#data-science-tools)
+    - [Google Colab](#google-colab)
 - [Resources](#resources)
 
 ## Statistics
 
-TODO
+TODO 
+
+https://www.youtube.com/watch?v=xxpc-HPKN28
+
+Individuals vs characteristics
+
+Population (census) vs sample
+
+Parameters vs samples
+
+Descriptive vs inferential
+
+Normal distribution and empirical rule (68-95-99.7)
+
+z-score
+
+Inference: Estimation, Testing, Regression
+
+Central limit theorem:
+- The sampling distribution (the distribution of x-bars (mean of the sample) from all possible samples) is also a normal distribution.
+- The mean of x-bars is equal to mean of the population.
+- The standard deviation of the x-bars is standard deviation of population divided by sqrt(n).
+
+https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample/more-significance-testing-videos/v/hypothesis-testing-and-p-values
+p-value - the probability of getting the given result given the null hypothesis. 
 
 ## Machine Learning
 
@@ -114,6 +143,12 @@ then phonemes, the words, and then generating a transcript.
 - [Yuanqing Lin](https://twitter.com/yuanqinglin) - CEO & Founder of Aibee, Former Head of Baidu Research.
 - [Yann LeCun](https://twitter.com/ylecun) - Professor at NYU. Chief AI Scientist at Facebook.
 
+## AI for Industries
+
+### AI for Healthcare
+
+
+
 ## Random Notes
 
 - Train, dev, and test datasets:
@@ -179,5 +214,6 @@ then phonemes, the words, and then generating a transcript.
 - [Advanced Machine Learning with TensorFlow on GCP Specialization, Coursera](https://www.coursera.org/specializations/advanced-machine-learning-tensorflow-gcp)
 - [TensorFlow and Keras in Practice Specialization, Coursera](https://www.coursera.org/specializations/tensorflow-in-practice)
 - [Neural Networks and Deep Learning, book by Michael Nielsen](http://neuralnetworksanddeeplearning.com/)  
-
+- [PyTorch at Tesla - Andrej Karpathy, YouTube](https://www.youtube.com/watch?v=oBklltKXtDE)
+- [Tesla Autonomy Day, YouTube](https://www.youtube.com/watch?v=Ucp0TTmvqOE)
 
