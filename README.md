@@ -9,7 +9,7 @@ and their related methods in order to understand and analyze actual phenomena wi
 - [Machine Learning](#machine-learning)
     - [Heroes of ML](#heroes-of-ml)
 - [AI for Industries](#ai-for-industries)
-    - [AI for Healhcare](#ai-for-healthcare)
+    - [AI for Healthcare](#ai-for-healthcare)
     - [AI for Financial Services](ai-for-financial-services)
 - [Data Science Tools](#data-science-tools)
     - [Google Colab](#google-colab)
@@ -147,7 +147,72 @@ then phonemes, the words, and then generating a transcript.
 
 ### AI for Healthcare
 
+[AI for Medicine Specialization, Coursera](https://www.coursera.org/specializations/ai-for-medicine)
 
+**AI for Diagnosis:**
+
+- Applications of AI for diagnosis (mostly computer vision):
+    - Diagnosing edema in lungs from X-Rays scans.
+    - Dermatology: detecting whether a mole is a skin cancer: https://www.nature.com/articles/nature21056.
+    - Ophthalmology: diagnosing eye disorders using retinal fundus photos (e.g. diagnosing diabetic retinopathy).
+    - Histopathology: determining the extent to which a cancer has spread from microscopic images of tissues.
+    - Identifying tumors in MRI data - image segmentation. A CNN called U-Net is used for this.
+- Challenges:
+    - Patient Overlap - as an example, the model can memorize a necklace on X-Rays images of a single patient and 
+        give an over-optimistic test evaluation. To fix this split train and test sets by patient, so that all images of 
+        the same patient are either in train or test sets.
+    - Set Sampling - when there is an imbalance dataset. Minority class sampling is used 
+    - Ground Truth / Reference Standard - consensus voting.
+
+**AI for Prognosis:**
+
+- Applications of AI for prognosis (mostly applications of [Survival analysis](https://arxiv.org/pdf/1801.05512.pdf)):
+    - Predicting risk of an event or when an event is likely to happen. E.g. death, heart attack or stroke, for people with a specific condition or for the general population. It's used to inform the patient and to guide the treatment.
+        - Risk of breast or ovarian cancer using data from blood tests.
+        - Risk of death for a person with a particular cancer.
+        - Risk of a heart attack.
+        - Risk of lung cancer recurrence after therapy.
+- [Survival analysis](https://arxiv.org/pdf/1801.05512.pdf) is a field in statistics that is used to predict when 
+    an event of interest will happen. The field emerged from medical research as a way to model 
+    a patient's survival — hence the term "survival analysis". 
+    - Censored data (end-of-study censoring, not-follow-up censoring) - we don't know the exact time of an event 
+        but we know that the event didn't happen before time X.
+    - Missing data: completely at random, at random, not at random. E.g. blood pressure measurements are missing for younger patients. 
+    - Hazard, Survival to Hazard, Cumulative Hazard - functions that describe the probability of an event over time.
+    - [C-index](https://square.github.io/pysurvival/metrics/c_index.html) - a measure of performance for a survival 
+        model (concordance - patience with worse outcome should have higher risk score). 
+    - Mortality score - the sum of hazards for different times.
+    - Python library for Survival analysis https://github.com/square/pysurvival/.
+	
+**AI for Treatment:**
+
+- Applications of AI for treatment (mostly statistical methods):
+    - Treatment effect estimation - determining whether certain treatment will be effective for a particular patient. 
+        The input is features of the patient, e.g. age, blood pressure and the output is the number representing risk 
+        reduction or increase for an event e.g. stroke or heart attack. The data from randomized control trials is used 
+        to train the model.
+- Treatment effect estimation:
+    - NNT (number needed to treat) = 1/ ARR (absolute risk reduction) - number of people who need to receive the 
+    treatment in order to benefit one of them.
+    - Factual - what happens to the patient with/without treatment - we know it. 
+        Counterfactual - what would happen to the patient without/with treatment - we don't know it.
+    - Average Treatment Effect - difference between means of outcomes with treatment and without treatment.
+    - Conditional Average Treatment Effect - Average Treatment Effect given some conditions on the patient, e.g. age, 
+        blood pressure.
+    - Two Tree Method (T-Learner) - build two decision trees to estimate risk with and without treatment, then 
+        subtract the values given by these trees.
+    - C-for-benefit - similar to C-index but for treatment effect estimator evaluation.
+- The task of extracting labels from doctors' unstructured reports on images of lung X-Rays. 
+    1. occurrences of specific labels are searched for in the text. E.g. if the word "edema" is found in the report, 
+        go to the next step. Because "edema" has synonyms, a special medical thesaurus called 
+        [SNOMED CT](https://en.wikipedia.org/wiki/SNOMED_CT) is used to find synonyms and related terms.
+    2. A Negation Classification is used to determine absence of a disease, e.g. if the report contains "no edema" 
+        or "no evidence of edema". This requires labeled data. If there is no labeled data, then a simple Regex or 
+        Dependency Parse rules are used.
+
+### AI for Financial Services
+
+TODO
 
 ## Random Notes
 
@@ -216,4 +281,5 @@ then phonemes, the words, and then generating a transcript.
 - [Neural Networks and Deep Learning, book by Michael Nielsen](http://neuralnetworksanddeeplearning.com/)  
 - [PyTorch at Tesla - Andrej Karpathy, YouTube](https://www.youtube.com/watch?v=oBklltKXtDE)
 - [Tesla Autonomy Day, YouTube](https://www.youtube.com/watch?v=Ucp0TTmvqOE)
+- [AI for Medicine Specialization, Coursera](https://www.coursera.org/specializations/ai-for-medicine)
 
