@@ -41,7 +41,8 @@ Central limit theorem:
 - The standard deviation of the x-bars is standard deviation of population divided by sqrt(n).
 
 https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample/more-significance-testing-videos/v/hypothesis-testing-and-p-values
-p-value - the probability of getting the given result given the null hypothesis. 
+
+p-value - the probability of getting a certain result given the null-hypothesis. 
 
 ## Machine Learning
 
