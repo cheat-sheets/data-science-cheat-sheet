@@ -49,13 +49,15 @@ p-value - the probability of getting a certain result given the null-hypothesis.
 ### Neural Networks
 
 - [Deep Learning Specialization, GitHub](https://github.com/medvedev1088/deep-learning-coursera)
-- [Building your Deep Neural Network - Step by Step, Google Colab](https://colab.research.google.com/drive/1_HQrowDxJRc38Gej3wPCttYBJmMiznrl#scrollTo=8jt2uP6xSvJG&uniqifier=1)
-- [Deep Neural Network - Application, Google Colab](https://colab.research.google.com/drive/1cXdV6xQboB5zk1MEQRK-zV3UHw7f3wjr#scrollTo=D7mFwkB0dWKL)
+- [Building your Deep Neural Network - Step by Step, Google Colab](https://colab.research.google.com/drive/1_HQrowDxJRc38Gej3wPCttYBJmMiznrl)
+- [Deep Neural Network - Application, Google Colab](https://colab.research.google.com/drive/1cXdV6xQboB5zk1MEQRK-zV3UHw7f3wjr)
 
 DNN implementations:
 
 - Python: TODO
-- Python + numpy: [Implementation of a Deep Neural Network in Python](./deep_neural_net_python)
+- Python + numpy: 
+    - [Implementation of a Deep Neural Network in Python](./deep_neural_net_python)
+    - Simple NN with numpy: https://pytorch.org/tutorials/beginner/pytorch_with_examples.html#warm-up-numpy
 - TensorFlow: TODO
 - Keras: TODO
 
@@ -133,6 +135,32 @@ then phonemes, the words, and then generating a transcript.
 - Pros: let the data speak, less hand-designing of components needed.
 - Cons: may need large amount of data, excludes potentially useful hand-designed components.
 
+### Convolutional Neural Networks
+
+Why convolutions:
+
+- Parameter sharing
+- Sparsity of connections
+
+Computer Vision Networks:
+
+- AlexNet
+- VGG-16 - 16 layers of "same" ConvLayers and MaxPooling layers
+- ResNet
+- Inception Network
+
+Face Recognition:
+
+- One Shot Learning, Triplet Loss
+
+Neural Style Transfer:
+
+- https://colab.research.google.com/github/tensorflow/models/blob/master/research/nst_blogpost/4_Neural_Style_Transfer_with_Eager_Execution.ipynb
+
+DeepFake Colab:
+ 
+- https://colab.research.google.com/github/AliaksandrSiarohin/first-order-model/blob/master/demo.ipynb
+
 ### Heroes of ML
 
 - [Andrew Ng](https://twitter.com/AndrewYNg) - Co-Founder of Coursera; Stanford CS adjunct faculty. Former head of Baidu AI Group/Google Brain.
@@ -143,6 +171,9 @@ then phonemes, the words, and then generating a transcript.
 - [Ruslan Salakhutdinov](https://twitter.com/rsalakhu) - UPMC Professor of Computer Science at Carnegie Mellon University.
 - [Yuanqing Lin](https://twitter.com/yuanqinglin) - CEO & Founder of Aibee, Former Head of Baidu Research.
 - [Yann LeCun](https://twitter.com/ylecun) - Professor at NYU. Chief AI Scientist at Facebook.
+- [Lex Fridman](https://twitter.com/lexfridman) - Research in machine learning, autonomous vehicles and human-centered AI. 
+- [Jeremy Howard](https://twitter.com/jeremyphoward) - Distinguished research scientist: @usfca; 
+    Co-founder: http://fast.ai; Chair: http://WAMRI.ai. 
 
 ## AI for Industries
 
@@ -210,6 +241,10 @@ then phonemes, the words, and then generating a transcript.
     2. A Negation Classification is used to determine absence of a disease, e.g. if the report contains "no edema" 
         or "no evidence of edema". This requires labeled data. If there is no labeled data, then a simple Regex or 
         Dependency Parse rules are used.
+        
+Applications of Deep Learning in Medicine:
+
+- [The wonderful and terrifying implications of computers that can learn | Jeremy Howard](https://youtu.be/t4kyRyKyOpo?t=627)
 
 ### AI for Financial Services
 
@@ -259,6 +294,10 @@ TODO
 - Why deep neural nets work better than shallow for complex functions: to calculate XOR of N parameters a deep
     neural net needs `log(N)` units, while a shallow neural net needs `2^n` units. A shallow net would be much bigger.      
 
+**GPT**:
+- GPT-3 vs Human Brain, Lex Fridman: https://www.youtube.com/watch?v=kpiY_LemaTc
+- Write with Transformer (Get a modern neural network to auto-complete your thoughts): https://transformer.huggingface.co/ 
+
 ## Data Science Tools
 
 ### Google Colab
@@ -283,4 +322,5 @@ TODO
 - [PyTorch at Tesla - Andrej Karpathy, YouTube](https://www.youtube.com/watch?v=oBklltKXtDE)
 - [Tesla Autonomy Day, YouTube](https://www.youtube.com/watch?v=Ucp0TTmvqOE)
 - [AI for Medicine Specialization, Coursera](https://www.coursera.org/specializations/ai-for-medicine)
+- [Deep Learning State of the Art (2020) | MIT Deep Learning Series](https://www.youtube.com/watch?v=0VH1Lim8gL8)
 
