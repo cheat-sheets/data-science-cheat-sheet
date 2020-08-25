@@ -7,6 +7,10 @@ and their related methods in order to understand and analyze actual phenomena wi
 
 - [Statistics](#statistics)
 - [Machine Learning](#machine-learning)
+    - [Neural Networks](#neural-networks)
+    - [Structuring ML Projects](#structuring-ml-projects)
+    - [Convolutional Neural Networks](#convolutional-neural-networks)
+    - [Sequence Models](#sequence-models)
     - [Heroes of ML](#heroes-of-ml)
 - [AI for Industries](#ai-for-industries)
     - [AI for Healthcare](#ai-for-healthcare)
@@ -137,6 +141,12 @@ then phonemes, the words, and then generating a transcript.
 
 ### Convolutional Neural Networks
 
+Colab Notebooks:
+
+- [Rock-paper-scissors classfication](https://colab.research.google.com/drive/1M_0bhHeBJznr4XC5QI_mLPJ4Iut_HjH6)
+- [Fashion MNIST image classification (with intermediate layers visualization)](https://colab.research.google.com/drive/1ZPipu8FLPMf4sZ3E-v3rocmXC-58sRV_)
+- [Cats vs dogs (with intermediate layers visualization)](https://colab.research.google.com/drive/1-JKPuRrBDpCUjE8oixEoilLdRWWEQt89)
+
 Why convolutions:
 
 - Parameter sharing
@@ -160,6 +170,19 @@ Neural Style Transfer:
 DeepFake Colab:
  
 - https://colab.research.google.com/github/AliaksandrSiarohin/first-order-model/blob/master/demo.ipynb
+
+YOLO (You Only Look Once) algorithm:
+- https://colab.research.google.com/drive/1z17LS1eCsw8I2EAMkaCI3PrTHJc201cu
+
+### Sequence Models
+
+TODO: Add more details
+
+- RNN (Recurrent Neural Network) - has a problem of exploding/vanishing gradients.
+- LSTM (Long Short-Term Memory Network) - solves the problem of exploding/vanishing gradients by
+    adding memory units.
+- GRU (Gate Recurrent Unit) - simplified version of LSTM.
+- Attention Model - adds attention mechanism to LSTM: [Colab Notebook](https://colab.research.google.com/drive/1GLr_RE0yKgFePn3KYLPPpirtu5I1Q1x4) 
 
 ### Heroes of ML
 
@@ -315,6 +338,7 @@ TODO
 
 - [Deep Learning Specialization, Coursera](https://www.coursera.org/specializations/deep-learning) 
 - [Deep Learning Specialization, Python Notebooks on GitHub](https://github.com/medvedev1088/deep-learning-coursera)
+- [Deep Learning Specialization v2, Python Notebooks on GitHub](https://github.com/enggen/Deep-Learning-Coursera)
 - [Machine Learning with TensorFlow on GCP Specialization, Coursera](https://www.coursera.org/specializations/machine-learning-tensorflow-gcp)
 - [Advanced Machine Learning with TensorFlow on GCP Specialization, Coursera](https://www.coursera.org/specializations/advanced-machine-learning-tensorflow-gcp)
 - [TensorFlow and Keras in Practice Specialization, Coursera](https://www.coursera.org/specializations/tensorflow-in-practice)
